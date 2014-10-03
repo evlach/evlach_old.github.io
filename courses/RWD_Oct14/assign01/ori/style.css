@@ -73,34 +73,3 @@ h2 {
 	color: #166BA1;
 	margin-top: 0;
 }
-
-
-aside {
-    padding: 20px 10px;
-
-}
-aside h1 {
-    font-size: 4em;
-    color: #166BA1;
-}
-aside blockquote {
-    font-size: 90%;
-    color: white;
-    line-height:1.1;
-}
-article h2 {
-    color:#166BA1;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-article img{
-    width: 184px;
-    height: 244px;
-}
-img#gondola{
-    float: right;
-}
-img#venice{
-    float: left;
-    margin-right: 10px;
-}

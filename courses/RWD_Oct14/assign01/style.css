@@ -28,6 +28,14 @@ body {
 	left: 260px;
 	background-color: #FFF;
 }
+nav h2{
+    width: 200px;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #216B9A;
+    color: #000000;
+    float: left;
+}
 ul#menu {
 	width: 200px;
 	padding: 0;
@@ -163,6 +171,16 @@ label:after {
     white-space: nowrap;
     overflow: hidden;
 }
-#formbuttons{
-    text-align: center;
+dl  dd  dl  {
+    display: inline;
+}
+
+dt {
+    display: inline;
+}
+dt dd{
+    display: inline;
+}
+dt:after {
+    content: ":";
 }

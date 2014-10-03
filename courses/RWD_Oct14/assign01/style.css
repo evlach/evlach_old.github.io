@@ -105,10 +105,11 @@ img#venice{
     float: left;
     margin-right: 10px;
 }
+
 a[href^="http://"]:not([href*="evlach.github.io"]):before{
-    content: " Go to ";
+    content: "";
     width: 16px;
     height: 16px;
     background: no-repeat url('external-link-icon.png');
-    padding-right: 1.2em;
+    padding-right: 1em;
 }

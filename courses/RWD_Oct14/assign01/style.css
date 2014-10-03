@@ -74,10 +74,11 @@ h2 {
 	margin-top: 0;
 }
 
-
+h1, h2 {
+    text-transform: uppercase;
+}
 aside {
     padding: 20px 10px;
-
 }
 aside h1 {
     font-size: 4em;
@@ -88,9 +89,9 @@ aside blockquote {
     color: white;
     line-height:1.1;
 }
+
 article h2 {
     color:#166BA1;
-    text-transform: uppercase;
     font-weight: bold;
 }
 article img{
@@ -103,4 +104,7 @@ img#gondola{
 img#venice{
     float: left;
     margin-right: 10px;
+}
+.spacer{
+    height: 10;
 }

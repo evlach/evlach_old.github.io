@@ -3,6 +3,9 @@
 <head>
     <title>Contact</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="This is a site about Venice.">
+
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
@@ -35,18 +38,17 @@
             <form action="confirmation.html">
                 <ul>
                     <li>
-                        <label>Name:
-                            <input type="text" size="30"/>
-                        </label>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" size="30" placeholder="Your name"/>
                     </li>
                     <li>
-                        <label>E-mail:
-                            <input type="text" size="30">
-                        </label>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" size="30" required placeholder="Your email">
+
                     </li>
                     <li>
                         <fieldset>
-                            <p class="label" id="ar_legend">Arrival Date:</p>
+                            <legend class="label" id="ar_legend">Arrival Date</legend>
                             <select name="ar_mon" aria-describedby="ar_legend" aria-label="Select Month">
                                 <option selected="">Select Month</option>
                                 <option>Jan</option>
@@ -110,7 +112,7 @@
                     </li>
                     <li>
                         <fieldset>
-                            <p class="label" id="d_legend">Departure Date:</p>
+                            <legend class="label" id="d_legend">Departure Date</legend>
                             <select name="d_mo" aria-describedby="d_legend" aria-label="Select Month">
                                 <option selected="">Select Month</option>
                                 <option>Jan</option>
@@ -173,18 +175,15 @@
                         </fieldset>
                     </li>
                     <li>
-                        <label>
-                            Message:
-                            <textarea name="msg">Type here</textarea>
-                        </label>
+                        <label for="msg">Message</label>
+                        <textarea id="msg" placeholder="Type here your message" aria-label="Type here your message" name="msg"></textarea>
+
                     </li>
                     <li>
-                        <input name="Reset" type="reset" value="Cancel">
-                        <input type="Submit" value="Proceed">
+                        <input name="Reset" aria-label="Reset form" type="reset" value="Cancel">
+                        <input type="Submit" aria-label="Submit form" value="Proceed">
                     </li>
                 </ul>
-
-
             </form>
         </article>
     </main>

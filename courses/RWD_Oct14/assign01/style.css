@@ -48,14 +48,14 @@ ul#menu {
 li a {
 	color: #FFF;
 }
-li a:hover, li a:hover {
+li a:focus, li a:focus {
 	color: #000;
 }
 a {
 	text-decoration: none;
 	color: #DA622E;
 }
-a:hover, a:focus {
+a:focus, a:focus {
 	color: #09F;
 }
 #aside {
@@ -84,10 +84,22 @@ aside h1 {
     font-size: 4em;
     color: #166BA1;
 }
+
 aside blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
     font-size: 90%;
     color: white;
     line-height:1.1;
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
 }
 
 article h2 {
@@ -137,9 +149,14 @@ form fieldset{
     padding: 0;
     margin: 0;
 }
-form p.label{
-    display: inline;
+legend {
     font-weight: bold;
+}
+legend:after {
+    content: ":";
+}
+label:after {
+    content: ":";
 }
 .hide-text {
     text-indent: 100%;

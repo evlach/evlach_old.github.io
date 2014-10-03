@@ -118,3 +118,34 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before{
     display: grid;
     grid-template-columns: auto minmax(min-content, 1fr);
 }
+form {
+    margin-top: 15px;
+}
+label {
+    font-weight:bold;
+}
+form ul{
+    list-style: none;
+}
+form ul li{
+    list-style: none;
+}
+form fieldset{
+    border: 0;
+    text-indent: 0;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+form p.label{
+    display: inline;
+    font-weight: bold;
+}
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#formbuttons{
+    text-align: center;
+}

@@ -111,4 +111,5 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before{
     height: 16px;
     background: no-repeat url('external-link-icon.png');
     padding-right: 1.2em;
+    padding-left: 1em;
 }

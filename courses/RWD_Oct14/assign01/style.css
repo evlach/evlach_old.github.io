@@ -4,7 +4,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 }
 #wrapper {
 	width: 998px;
@@ -110,11 +110,11 @@ blockquote:before {
     vertical-align: -0.4em;
 }
 
-article h2 {
+section h2 {
     color:#166BA1;
     font-weight: bold;
 }
-article img{
+section img{
     width: 184px;
     height: 244px;
 }

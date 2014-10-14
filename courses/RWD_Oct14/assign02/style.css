@@ -80,9 +80,12 @@ a:focus, a:focus {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    background-color: #006699;
 }
-
+@media all and (max-width: 37.5em) {
+    #banner {
+        background-color: #006699;
+    }
+}
 @media all and (min-width: 37.5em) {
     nav {
         width: 10%;

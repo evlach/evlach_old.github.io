@@ -126,13 +126,13 @@ footer {
 ul.menu{
     padding: 0;
     margin-top: 2em;
-    border: 0.1em solid #000;
+    border: 0.2em solid #000;
 }
 ul.menu li {
     text-align: center;
     color: #fff;
-    padding: 10px 0 10px 20px;
-    border-bottom: 1px solid #216B9A;
+    padding: 0.8em 0 0.8em 0.2%;
+    border-bottom: 0.1em solid #216B9A;
     background-color: #DA622E;
     text-align: center;
     list-style: none;
@@ -181,27 +181,65 @@ article h2 {
     color:#166BA1;
     font-weight: bold;
 }
-article img{
-    width: 184px;
-    height: 244px;
-}
 img#gondola{
     float: right;
 }
 img#venice{
     float: left;
-    margin-right: 10px;
+    margin-right: 0.8em;
 }
-
 a[href^="http://"]:not([href*="evlach.github.io"]):before{
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
     background: no-repeat url('external-link-icon.png');
     padding-right: 1em;
 }
+form {
+    margin-top: 1em;
+}
+label {
+    font-weight:bold;
+}
+form ul{
+    list-style: none;
+}
+form ul li{
+    list-style: none;
+}
+form fieldset{
+    border: 0;
+    text-indent: 0;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+legend {
+    font-weight: bold;
+}
+legend:after {
+    content: ":";
+}
+label:after {
+    content: ":";
+}
 .hide-text {
-    font-size: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+dl  dd  dl  {
+    display: inline;
+}
+
+dt {
+    display: inline;
+}
+dt dd{
+    display: inline;
+}
+dt:after {
+    content: ":";
 }
 .html5only {
     display: block;
@@ -209,18 +247,6 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before{
 .nohtml5 {
     display: none;
 }
-
-
-
-/*two column */
-@media all and (min-width: 37.5em) {
-
-}
-/* three column */
-@media all and (min-width: 50em) {
-
-}
-/*horizontally centered */
-@media all and (min-width: 75em) {
-
+.hide-text {
+    font-size: 0;
 }

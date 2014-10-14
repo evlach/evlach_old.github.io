@@ -4,12 +4,23 @@
     <title>Homepage</title>
     <meta charset="utf-8"/>
     <link href="style.css" rel="stylesheet" />
+    <!--[if lt IE 9 & !IEMobile]>
+    <link rel="stylesheet" type="text/css" href="ie8.css">
+    <![endif]-->
 </head>
 <body>
 <div id="wrapper">
     <header id="banner" role="banner">
         <h1>Canal View B & B: Home</h1>
     </header>
+    <nav id="main_menu" role="navigation">
+        <h2>Main Menu</h2>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="prices.html">Prices</a></li>
+        </ul>
+    </nav>
     <main id="content" role="main">
         <section>
             <h2>Low cost romantic Venice</h2>
@@ -25,14 +36,6 @@
                 Visit the islands Murano, Burano, Torcello and Lido, the boats are just 5 minutes by foot away.</p>
         </section>
     </main>
-    <nav role="navigation">
-        <h2>Menu</h2>
-        <ul class="menu" id="nav_pri">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="prices.html">Prices</a></li>
-        </ul>
-    </nav>
     <aside id="aside" role="complementary">
         <h2>Reviews</h2>
         <blockquote>Thank you very much for a lovely stay - a great room a
@@ -45,6 +48,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="http://en.turismovenezia.it/" title="external link to Turismo Venezia">Turismo Venezia</a></li>
         </ul>
+        <p><small>© 2014 evlach</small></p>
     </footer>
 </div>
 </body>

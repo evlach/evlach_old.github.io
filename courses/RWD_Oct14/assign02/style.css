@@ -121,6 +121,7 @@ aside {
 footer {
     clear: both;
     text-align: center;
+    background-color: #DDDDDD;
 }
 ul.menu{
     padding: 0;
@@ -136,7 +137,27 @@ ul.menu li {
     text-align: center;
     list-style: none;
 }
-
+@media all and (min-width: 50em) {
+    footer ul.menu {
+        border: none;
+    }
+    footer ul.menu li {
+        color: #000000;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        display: inline;
+    }
+    footer ul.menu li:after
+    {
+        content: ' |';
+    }
+    footer ul.menu li:last-child:after
+    {
+        content: '';
+    }
+}
 aside h1 {
     font-size: 110%;
     color: #166BA1;
@@ -164,7 +185,13 @@ article img{
     width: 184px;
     height: 244px;
 }
-
+img#gondola{
+    float: right;
+}
+img#venice{
+    float: left;
+    margin-right: 10px;
+}
 
 a[href^="http://"]:not([href*="evlach.github.io"]):before{
     content: "";

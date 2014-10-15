@@ -184,12 +184,16 @@ article h2 {
     color:#166BA1;
     font-weight: bold;
 }
-img#gondola{
+.floatRight{
     float: right;
 }
-img#venice{
+.floatLeft{
     float: left;
-    margin-right: 0.8em;
+}
+.radius {
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    border-radius: 0.6em;
 }
 a[href^="http://"]:not([href*="evlach.github.io"]):before{
     content: "";

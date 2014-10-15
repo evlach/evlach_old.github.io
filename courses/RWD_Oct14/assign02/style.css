@@ -111,12 +111,13 @@ main {
 }
 aside {
     background-color: #999;
+    clear: both;
 }
 @media all and (min-width: 50em) {
     aside {
         width: 10%;
         float: left;
-
+        clear: none;
     }
 }
 
@@ -127,7 +128,6 @@ footer {
 }
 ul.menu{
     padding: 0;
-    margin-top: 2em;
     border: 0.2em solid #000;
 }
 ul.menu li {

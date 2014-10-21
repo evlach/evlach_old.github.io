@@ -178,6 +178,11 @@ aside {
         clear: none;
     }
 }
+@media all and (min-width: 50em) {
+    #main_menu ul {
+        float: left;
+    }
+}
 
 footer {
     clear: both;

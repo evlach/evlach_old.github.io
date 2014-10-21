@@ -5,7 +5,7 @@
 */
 body {
     margin: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;nav-down: ;
     font-size: 100%;
 }
 
@@ -15,11 +15,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #DDD;
-    }
-}
-
-@media all and (min-width: 50em) {
-    body {
     }
 }
 
@@ -76,74 +71,17 @@ li a:focus, li a:hover, li:active {
         width: 75em;
     }
 }
-
 #banner {
     width: 100%;
     font-size: 120%;
     text-transform: uppercase;
     text-align: center;
-    color: #ffffff;
+    background-color: #006699;
 }
 
-@media all and (max-width: 37.5em) {
+@media all and (min-width: 37.5em) {
     #banner {
-        background-color: #006699;
-    }
-}
-
-a#hamlink {
-    padding: 0 0 0 6%;
-}
-
-@media all and (max-width: 37.5em) {
-    a#hamlink {
-        font-size: 150%;
-        color: #ff6040;
-        display: block;
-        padding-top: .3em;
-    }
-}
-
-@media all and (max-width: 37.5em) {
-    nav {
-        height: 2.8em;
-        overflow: hidden;
-        webkit-transition: height 3s;
-        -moz-transition: height 3s;
-        -o-transition: height 3s;
-        -ms-transition: height 3s;
-        transition: height 3s;
-    }
-
-    nav:hover, nav:focus, nav:active {
-        height: 13em;
-        -webkit-transition: height 3s;
-        -moz-transition: height 3s;
-        -o-transition: height 3s;
-        -ms-transition: height 3s;
-        transition: height 3s;
-    }
-
-    nav:hover a#hamlink {
-        color: #D65710;
-        line-height: 0;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        -webkit-transition: line-height 3s;
-        -moz-transition: line-height 3s;
-        -o-transition: line-height 3s;
-        -ms-transition: line-height 3s;
-        transition: line-height 3s;
-
-    }
-
-    a#hamlink {
-        -webkit-transition: color 5s, line-height 3s;
-        -moz-transition: color 5s, line-height 3s;
-        -o-transition: color 5s, line-height 3s;
-        -ms-transition: color 5s, line-height 3s;
-        transition: color 5s, line-height 3s;
+        background-color: transparent;
     }
 }
 
@@ -152,14 +90,12 @@ main {
     padding: 0;
     background-color: #FFF;
 }
-
 @media all and (min-width: 37.5em) {
     main {
         width: 90%;
         float: left;
     }
 }
-
 @media all and (min-width: 50em) {
     main {
         width: 80%;
@@ -178,17 +114,6 @@ aside {
         clear: none;
     }
 }
-@media all and (min-width: 50em) {
-    #main_menu ul {
-        float: left;
-    }
-}
-
-footer {
-    clear: both;
-    text-align: center;
-    background-color: #DDDDDD;
-}
 
 ul.menu {
     padding: 0;
@@ -198,18 +123,96 @@ ul.menu {
 ul.menu li {
     text-align: center;
     color: #fff;
-    padding: 0.8em 0 0.8em 0.2%;
-    border-bottom: 0.1em solid #216B9A;
+    padding: 0.1em 0 0.1em 0.1%;
+    border-bottom: 0.1em outset #216B9A;
     background-color: #DA622E;
     text-align: center;
     list-style: none;
 }
+@media all and (min-width: 37.5em) {
+    ul.menu li {
+        padding: 0.4em 0 0.4em 0.2%;
+    }
+}
+ul.menu li:hover,  ul.menu li:focus,  ul.menu li:active{
+    background-color: #999999;
+}
+@media all and (min-width: 37.5em) {
+    #main_menu ul {
+        float: left;
+    }
+}
+a#hamlink {
+    padding: 0 0 0 2%;
+    font-size: 120%;
+    color: #ff6040;
+    display: block;
+    padding-top: .3em;
+    -webkit-transition: color 5s, line-height 3s;
+    -moz-transition: color 5s, line-height 3s;
+    -o-transition: color 5s, line-height 3s;
+    -ms-transition: color 5s, line-height 3s;
+    transition: color 5s, line-height 3s;
+}
+nav {
+    height: 2.8em;
+    overflow: hidden;
+    webkit-transition: height 3s;
+    -moz-transition: height 3s;
+    -o-transition: height 3s;
+    -ms-transition: height 3s;
+    transition: height 3s;
+}
+nav:hover, nav:focus, nav:active {
+    height: 13em;
+    -webkit-transition: height 3s;
+    -moz-transition: height 3s;
+    -o-transition: height 3s;
+    -ms-transition: height 3s;
+    transition: height 3s;
+}
+nav:hover a#hamlink {
+    color: #D65710;
+    line-height: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: line-height 3s;
+    -moz-transition: line-height 3s;
+    -o-transition: line-height 3s;
+    -ms-transition: line-height 3s;
+    transition: line-height 3s;
 
+}
+
+@media all and (min-width: 37.5em) {
+    nav{
+        float: left;
+        height: auto;
+        transition: none;
+    }
+    nav:hover, nav:focus, nav:active {
+        height: auto;
+        transition: none;
+    }
+    nav:hover a#hamlink {
+        height: auto;
+        transition: none;
+    }
+    nav a#hamlink {
+        font-size: 0;
+    }
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #DDDDDD;
+}
 @media all and (min-width: 50em) {
     footer ul.menu {
         border: none;
     }
-
     footer ul.menu li {
         color: #000000;
         list-style: none;
@@ -218,15 +221,12 @@ ul.menu li {
         border: none;
         display: inline;
     }
-
     footer ul.menu li a {
         min-height: 1cm;
     }
-
     footer ul.menu li:after {
         content: ' |';
     }
-
     footer ul.menu li:last-child:after {
         content: '';
     }

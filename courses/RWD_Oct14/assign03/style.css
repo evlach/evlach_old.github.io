@@ -1,59 +1,64 @@
+/*
+    A two column layout is presented on viewports between 600 and 800 (37.5em)
+    A three column layout is presented on viewports wider than 800 pixels (50em)
+    The layout is horizontally centered on viewports wider 1200px (75em)
+*/
 body {
     margin: 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 100%;
 }
-/*
-    A two column layout is presented on viewports between 600 and 800
-*/
+
 @media all and (min-width: 37.5em) {
     body {
-        background-image: url(background.jpg);
+        background-image: url(../background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #DDD;
     }
 }
-/*
-    A three column layout is presented on viewports wider than 800 pixels.
-*/
+
 @media all and (min-width: 50em) {
     body {
     }
 }
-/*
-    The layout is horizontally centered on viewports wider 1200px
-*/
+
 @media all and (min-width: 75em) {
     body {
         background-color: #ffffff;
-        text-align : center;
+        text-align: center;
     }
 }
 
 h1, h2 {
     text-transform: uppercase;
 }
+
 h1 {
     margin-top: 0;
 }
+
 h2 {
     font-size: 100%;
     color: #166BA1;
     margin-top: 0;
 }
+
 li a {
     color: #FFF;
 }
-li a:focus, li a:focus {
-    color: #000;
-}
+
 a {
     text-decoration: none;
     color: #DA622E;
 }
-a:focus, a:focus {
+
+a:hover, a:focus, a:active {
     color: #09F;
+}
+
+li a:focus, li a:hover, li:active {
+    color: #000;
 }
 
 #wrapper {
@@ -62,13 +67,12 @@ a:focus, a:focus {
     margin: 0 auto auto 0.1%;
 }
 
-/*horizontally centered */
 @media all and (min-width: 75em) {
     #wrapper {
-        text-align : left;
-        margin-left : auto;
-        margin-right : auto;
-        position : relative;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
         width: 75em;
     }
 }
@@ -80,15 +84,66 @@ a:focus, a:focus {
     text-align: center;
     color: #ffffff;
 }
+
 @media all and (max-width: 37.5em) {
     #banner {
         background-color: #006699;
     }
 }
-@media all and (min-width: 37.5em) {
+
+a#hamlink {
+    padding: 0 0 0 6%;
+}
+
+@media all and (max-width: 37.5em) {
+    a#hamlink {
+        font-size: 150%;
+        color: #ff6040;
+        display: block;
+        padding-top: .3em;
+    }
+}
+
+@media all and (max-width: 37.5em) {
     nav {
-        width: 10%;
-        float: left;
+        height: 2.8em;
+        overflow: hidden;
+        webkit-transition: height 3s;
+        -moz-transition: height 3s;
+        -o-transition: height 3s;
+        -ms-transition: height 3s;
+        transition: height 3s;
+    }
+
+    nav:hover, nav:focus, nav:active {
+        height: 13em;
+        -webkit-transition: height 3s;
+        -moz-transition: height 3s;
+        -o-transition: height 3s;
+        -ms-transition: height 3s;
+        transition: height 3s;
+    }
+
+    nav:hover a#hamlink {
+        color: #D65710;
+        line-height: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-transition: line-height 3s;
+        -moz-transition: line-height 3s;
+        -o-transition: line-height 3s;
+        -ms-transition: line-height 3s;
+        transition: line-height 3s;
+
+    }
+
+    a#hamlink {
+        -webkit-transition: color 5s, line-height 3s;
+        -moz-transition: color 5s, line-height 3s;
+        -o-transition: color 5s, line-height 3s;
+        -ms-transition: color 5s, line-height 3s;
+        transition: color 5s, line-height 3s;
     }
 }
 
@@ -97,22 +152,25 @@ main {
     padding: 0;
     background-color: #FFF;
 }
+
 @media all and (min-width: 37.5em) {
     main {
         width: 90%;
         float: left;
-
     }
 }
+
 @media all and (min-width: 50em) {
     main {
         width: 80%;
     }
 }
+
 aside {
     background-color: #999;
     clear: both;
 }
+
 @media all and (min-width: 50em) {
     aside {
         width: 10%;
@@ -126,10 +184,12 @@ footer {
     text-align: center;
     background-color: #DDDDDD;
 }
-ul.menu{
+
+ul.menu {
     padding: 0;
     border: 0.2em solid #000;
 }
+
 ul.menu li {
     text-align: center;
     color: #fff;
@@ -139,10 +199,12 @@ ul.menu li {
     text-align: center;
     list-style: none;
 }
+
 @media all and (min-width: 50em) {
     footer ul.menu {
         border: none;
     }
+
     footer ul.menu li {
         color: #000000;
         list-style: none;
@@ -151,15 +213,20 @@ ul.menu li {
         border: none;
         display: inline;
     }
-    footer ul.menu li:after
-    {
+
+    footer ul.menu li a {
+        min-height: 1cm;
+    }
+
+    footer ul.menu li:after {
         content: ' |';
     }
-    footer ul.menu li:last-child:after
-    {
+
+    footer ul.menu li:last-child:after {
         content: '';
     }
 }
+
 aside h1 {
     font-size: 110%;
     color: #166BA1;
@@ -168,91 +235,112 @@ aside h1 {
 aside blockquote {
     margin: 1.5em 0.1%;
     padding: 0.5em 0.3%;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: "\201C" "\201D" "\2018" "\2019";
     font-size: 90%;
     color: white;
-    line-height:110%;
+    line-height: 110%;
 }
+
 blockquote:before {
     color: #ccc;
     content: open-quote;
     margin-right: 0.25em;
     vertical-align: -0.4em;
 }
+
 article h2 {
-    color:#166BA1;
+    color: #166BA1;
     font-weight: bold;
 }
-.floatRight{
+
+.floatRight {
     float: right;
 }
-.floatLeft{
+
+.floatLeft {
     float: left;
 }
+
 .radius {
     -webkit-border-radius: 0.6em;
     -moz-border-radius: 0.6em;
     border-radius: 0.6em;
 }
-a[href^="http://"]:not([href*="evlach.github.io"]):before{
+
+a[href^="http://"]:not([href*="evlach.github.io"]):before {
     content: "";
     width: 1em;
     height: 1em;
-    background: no-repeat url('external-link-icon.png');
+    background: no-repeat url('../external-link-icon.png');
     padding-right: 1em;
 }
+
 form {
     margin-top: 1em;
 }
+
 label {
-    font-weight:bold;
+    font-weight: bold;
 }
-form ul{
+
+form ul {
     list-style: none;
 }
-form ul li{
+
+form ul li {
     list-style: none;
 }
-form fieldset{
+
+form fieldset {
     border: 0;
     text-indent: 0;
     display: inline;
     padding: 0;
     margin: 0;
 }
+
 legend {
     font-weight: bold;
 }
+
 legend:after {
     content: ":";
 }
+
 label:after {
     content: ":";
 }
+
 .hide-text {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
-dl  dd  dl  {
+
+dl dd dl {
     display: inline;
 }
 
 dt {
     display: inline;
 }
-dt dd{
+
+dt dd {
     display: inline;
 }
+
 dt:after {
     content: ":";
 }
+
 .html5only {
     display: block;
 }
+
 .nohtml5 {
     display: none;
 }
+
 .hide-text {
     font-size: 0;
 }

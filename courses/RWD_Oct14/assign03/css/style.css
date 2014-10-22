@@ -11,7 +11,7 @@ body {
 
 @media all and (min-width: 37.5em) {
     body {
-        background-image: url(background.jpg);
+        background-image: url(../img/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #DDD;
@@ -281,7 +281,7 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before {
     content: "";
     width: 1em;
     height: 1em;
-    background: no-repeat url('external-link-icon.png');
+    background: no-repeat url('../img/external-link-icon.png');
     padding-right: 1em;
 }
 

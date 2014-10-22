@@ -5,7 +5,7 @@
 */
 body {
     margin: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;nav-down: ;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;"nav-down" ;
     font-size: 100%;
 }
 
@@ -67,13 +67,12 @@ li a:focus, li a:hover, li:active {
         text-align: left;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
-        width: 75em;
+        width: 80%;
     }
 }
 #banner {
     width: 100%;
-    font-size: 120%;
+    font-size: 50%;
     text-transform: uppercase;
     text-align: center;
     background-color: #006699;
@@ -82,9 +81,14 @@ li a:focus, li a:hover, li:active {
 @media all and (min-width: 37.5em) {
     #banner {
         background-color: transparent;
+        font-size: 80%;
     }
 }
-
+@media all and (min-width: 50em) {
+    #banner {
+        font-size: 120%;
+    }
+}
 main {
     margin: 0;
     padding: 0;
@@ -138,13 +142,14 @@ ul.menu li:hover,  ul.menu li:focus,  ul.menu li:active{
     background-color: #999999;
 }
 @media all and (min-width: 37.5em) {
-    #main_menu ul {
+    #main_menu {
         float: left;
+        width: 10%;
     }
 }
 a#hamlink {
     padding: 0 0 0 2%;
-    font-size: 120%;
+    font-size: 70%;
     color: #ff6040;
     display: block;
     padding-top: .3em;
@@ -155,7 +160,7 @@ a#hamlink {
     transition: color 5s, line-height 3s;
 }
 nav {
-    height: 2.8em;
+    height: 1em;
     overflow: hidden;
     webkit-transition: height 3s;
     -moz-transition: height 3s;

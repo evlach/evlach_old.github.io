@@ -1,5 +1,5 @@
 /*
-    A two column layout is presented on viewports between 600 and 800 (37.5em)
+    A two column layout is presented on viewports between 600 and 800 (37.5->37em)
     A three column layout is presented on viewports wider than 800 pixels (50em)
     The layout is horizontally centered on viewports wider 1200px (75em)
 */
@@ -9,7 +9,7 @@ body {
     font-size: 100%;
 }
 
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     body {
         background-image: url(../img/background.jpg);
         background-repeat: no-repeat;
@@ -78,7 +78,7 @@ li a:focus, li a:hover, li:active {
     background-color: #006699;
 }
 
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     #banner {
         background-color: transparent;
         font-size: 80%;
@@ -94,7 +94,7 @@ main {
     padding: 0;
     background-color: #FFF;
 }
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     main {
         width: 90%;
         float: left;
@@ -133,7 +133,7 @@ ul.menu li {
     text-align: center;
     list-style: none;
 }
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     ul.menu li {
         padding: 0.4em 0 0.4em 0.2%;
     }
@@ -141,7 +141,7 @@ ul.menu li {
 ul.menu li:hover,  ul.menu li:focus,  ul.menu li:active{
     background-color: #999999;
 }
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     #main_menu {
         float: left;
         width: 10%;
@@ -161,6 +161,7 @@ a#hamlink {
 }
 nav {
     height: 1em;
+    font-size: 130%;
     overflow: hidden;
     webkit-transition: height 3s;
     -moz-transition: height 3s;
@@ -169,7 +170,7 @@ nav {
     transition: height 3s;
 }
 nav:hover, nav:focus, nav:active {
-    height: 13em;
+    height: 6em;
     -webkit-transition: height 3s;
     -moz-transition: height 3s;
     -o-transition: height 3s;
@@ -190,7 +191,7 @@ nav:hover a#hamlink {
 
 }
 
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 37em) {
     nav{
         float: left;
         height: auto;
@@ -206,6 +207,9 @@ nav:hover a#hamlink {
     }
     nav a#hamlink {
         font-size: 0;
+    }
+    nav ul li{
+        font-size: 100%;
     }
 }
 

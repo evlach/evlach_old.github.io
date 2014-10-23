@@ -7,14 +7,16 @@ body {
     margin: 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;"nav-down" ;
     font-size: 100%;
+    background-image: url(../img/background-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 @media all and (min-width: 37em) {
     body {
         background-image: url(../img/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #DDD;
     }
 }
 
@@ -75,12 +77,10 @@ li a:focus, li a:hover, li:active {
     font-size: 50%;
     text-transform: uppercase;
     text-align: center;
-    background-color: #006699;
 }
 
 @media all and (min-width: 37em) {
     #banner {
-        background-color: transparent;
         font-size: 80%;
     }
 }
@@ -216,7 +216,6 @@ nav:hover a#hamlink {
 footer {
     clear: both;
     text-align: center;
-    background-color: #DDDDDD;
 }
 @media all and (min-width: 50em) {
     footer ul.menu {

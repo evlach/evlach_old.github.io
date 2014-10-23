@@ -28,7 +28,12 @@
         <section>
             <h2>Low cost romantic Venice</h2>
             <figure class="floatLeft">
-                <img class="radius" src="img/gondola.jpg"  alt="Gondola in Venice" title="Gondola in Venice"/>
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 50em)" srcset="img/gondola.jpg">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="img/gondola-min.jpg" alt="showing a Gondola in Venice">
+                </picture>
                 <figcaption>Gondola in Venice</figcaption>
             </figure>
             <p>Our Bed and Breakfast is located in a typical Venetian area, on the second floor of a Venetian

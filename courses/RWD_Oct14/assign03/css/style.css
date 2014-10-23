@@ -170,7 +170,7 @@ nav {
     transition: height 3s;
 }
 nav:hover, nav:focus, nav:active {
-    height: 6em;
+    height: 7em;
     -webkit-transition: height 3s;
     -moz-transition: height 3s;
     -o-transition: height 3s;

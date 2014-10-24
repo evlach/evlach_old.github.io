@@ -17,7 +17,6 @@ body {
         background-image: url(../img/background.jpg);
     }
 }
-
 @media all and (min-width: 75em) {
     body {
         background-color: #ffffff;
@@ -323,7 +322,6 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before {
     padding-right: 1em;
     width: 1em;
 }
-
 form {
     margin-top: 1em;
 }
@@ -331,15 +329,12 @@ form {
 label {
     font-weight: bold;
 }
-
 form ul {
     list-style: none;
 }
-
 form ul li {
     list-style: none;
 }
-
 form fieldset {
     border: 0;
     display: inline;
@@ -347,32 +342,24 @@ form fieldset {
     padding: 0;
     text-indent: 0;
 }
-
 legend {
     font-weight: bold;
 }
-
 legend:after {
     content: ":";
 }
-
 label:after {
     content: ":";
 }
-
 dl dd dl {
     display: inline;
 }
-
 dt {
     display: inline;
 }
-
-
 dt:after {
     content: ":";
 }
-
 .html5only {
     display: block;
 }

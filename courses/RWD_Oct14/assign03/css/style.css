@@ -10,8 +10,6 @@ body {
     background-image: url(../img/background-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 @media all and (min-width: 37em) {
@@ -36,22 +34,22 @@ h1 {
 }
 
 h2 {
-    font-size: 100%;
     color: #166BA1;
+    font-size: 100%;
     margin-top: 0;
 }
 
-li a {
-    color: #FFF;
-}
-
 a {
-    text-decoration: none;
     color: #DA622E;
+    text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
     color: #09F;
+}
+
+li a {
+    color: #FFF;
 }
 
 li a:focus, li a:hover, li:active {
@@ -59,24 +57,25 @@ li a:focus, li a:hover, li:active {
 }
 
 #wrapper {
-    width: 100%;
-    padding: 0 0.1% 1em 0.1%;
     margin: 0 auto auto 0.1%;
+    padding: 0 0.1% 1em 0.1%;
+    width: 100%;
 }
 
 @media all and (min-width: 75em) {
     #wrapper {
-        text-align: left;
         margin-left: auto;
         margin-right: auto;
+        text-align: left;
         width: 80%;
     }
 }
+
 #banner {
-    width: 100%;
     font-size: 50%;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 @media all and (min-width: 37em) {
@@ -84,22 +83,26 @@ li a:focus, li a:hover, li:active {
         font-size: 80%;
     }
 }
+
 @media all and (min-width: 50em) {
     #banner {
         font-size: 120%;
     }
 }
+
 main {
+    background-color: #FFF;
     margin: 0;
     padding: 0;
-    background-color: #FFF;
 }
+
 @media all and (min-width: 37em) {
     main {
-        width: 90%;
         float: left;
+        width: 90%;
     }
 }
+
 @media all and (min-width: 50em) {
     main {
         width: 80%;
@@ -113,102 +116,122 @@ aside {
 
 @media all and (min-width: 50em) {
     aside {
-        width: 10%;
-        float: left;
         clear: none;
+        float: left;
+        width: 10%;
     }
 }
 
 ul.menu {
-    padding: 0;
     border: 0.2em solid #000;
+    padding: 0;
 }
 
 ul.menu li {
-    text-align: center;
-    color: #fff;
-    padding: 0.1em 0 0.1em 0.1%;
-    border-bottom: 0.1em outset #216B9A;
     background-color: #DA622E;
-    text-align: center;
+    border-bottom: 0.1em outset #216B9A;
+    color: #fff;
+    line-height: 2;
     list-style: none;
+    padding: 0.1em 0 0.1em 0.1%;
+    text-align: center;
+    text-align: center;
 }
+
 @media all and (min-width: 37em) {
     ul.menu li {
+        line-height: 1;
         padding: 0.4em 0 0.4em 0.2%;
     }
 }
-ul.menu li:hover,  ul.menu li:focus,  ul.menu li:active{
+
+ul.menu li:hover, ul.menu li:focus, ul.menu li:active {
     background-color: #999999;
 }
+
 @media all and (min-width: 37em) {
     #main_menu {
         float: left;
         width: 10%;
     }
 }
+
 a#hamlink {
-    padding: 0 0 0 2%;
-    font-size: 70%;
     color: #ff6040;
     display: block;
+    font-size: 70%;
+    padding: 0 0 0 2%;
     padding-top: .3em;
-    -webkit-transition: color 5s, line-height 3s;
-    -moz-transition: color 5s, line-height 3s;
-    -o-transition: color 5s, line-height 3s;
-    -ms-transition: color 5s, line-height 3s;
     transition: color 5s, line-height 3s;
+    -moz-transition: color 5s, line-height 3s;
+    -ms-transition: color 5s, line-height 3s;
+    -o-transition: color 5s, line-height 3s;
+    -webkit-transition: color 5s, line-height 3s;
 }
+
 nav {
-    height: 1em;
     font-size: 130%;
+    height: 1em;
     overflow: hidden;
+    transition: height 3s;
+    -moz-transition: height 3s;
+    -ms-transition: height 3s;
+    -o-transition: height 3s;
     webkit-transition: height 3s;
-    -moz-transition: height 3s;
-    -o-transition: height 3s;
-    -ms-transition: height 3s;
-    transition: height 3s;
 }
+
 nav:hover, nav:focus, nav:active {
-    height: 7em;
-    -webkit-transition: height 3s;
-    -moz-transition: height 3s;
-    -o-transition: height 3s;
-    -ms-transition: height 3s;
+    height: 8.5em;
     transition: height 3s;
+    -moz-transition: height 3s;
+    -ms-transition: height 3s;
+    -o-transition: height 3s;
+    -webkit-transition: height 3s;
 }
+
 nav:hover a#hamlink {
     color: #D65710;
     line-height: 0;
-    text-indent: 100%;
-    white-space: nowrap;
     overflow: hidden;
-    -webkit-transition: line-height 3s;
-    -moz-transition: line-height 3s;
-    -o-transition: line-height 3s;
-    -ms-transition: line-height 3s;
+    text-indent: 100%;
     transition: line-height 3s;
-
+    -moz-transition: line-height 3s;
+    -ms-transition: line-height 3s;
+    -o-transition: line-height 3s;
+    -webkit-transition: line-height 3s;
+    white-space: nowrap;
 }
 
 @media all and (min-width: 37em) {
-    nav{
+    nav {
         float: left;
         height: auto;
         transition: none;
     }
+}
+
+@media all and (min-width: 37em) {
     nav:hover, nav:focus, nav:active {
         height: auto;
         transition: none;
     }
+}
+
+@media all and (min-width: 37em) {
     nav:hover a#hamlink {
         height: auto;
         transition: none;
     }
+}
+
+@media all and (min-width: 37em) {
     nav a#hamlink {
         font-size: 0;
     }
-    nav ul li{
+}
+
+@media all and (min-width: 37em) {
+    nav ul li {
         font-size: 100%;
     }
 }
@@ -217,41 +240,54 @@ footer {
     clear: both;
     text-align: center;
 }
+
 @media all and (min-width: 50em) {
     footer ul.menu {
         border: none;
     }
+}
+
+@media all and (min-width: 50em) {
     footer ul.menu li {
+        border: none;
         color: #000000;
+        display: inline;
         list-style: none;
         margin: 0;
         padding: 0;
-        border: none;
-        display: inline;
     }
+}
+
+@media all and (min-width: 50em) {
     footer ul.menu li a {
         min-height: 1cm;
     }
+}
+
+@media all and (min-width: 50em) {
     footer ul.menu li:after {
         content: ' |';
     }
+}
+
+@media all and (min-width: 50em) {
     footer ul.menu li:last-child:after {
         content: '';
     }
 }
 
 aside h1 {
-    font-size: 110%;
     color: #166BA1;
+    font-size: 110%;
 }
 
 aside blockquote {
+    color: white;
+    font-size: 90%;
+    line-height: 1.1;
     margin: 1.5em 0.1%;
     padding: 0.5em 0.3%;
     quotes: "\201C" "\201D" "\2018" "\2019";
-    font-size: 90%;
-    color: white;
-    line-height: 110%;
 }
 
 blockquote:before {
@@ -275,17 +311,17 @@ article h2 {
 }
 
 .radius {
-    -webkit-border-radius: 0.6em;
-    -moz-border-radius: 0.6em;
     border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
 }
 
 a[href^="http://"]:not([href*="evlach.github.io"]):before {
-    content: "";
-    width: 1em;
-    height: 1em;
     background: no-repeat url('../img/external-link-icon.png');
+    content: "";
+    height: 1em;
     padding-right: 1em;
+    width: 1em;
 }
 
 form {
@@ -306,10 +342,10 @@ form ul li {
 
 form fieldset {
     border: 0;
-    text-indent: 0;
     display: inline;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-indent: 0;
 }
 
 legend {
@@ -325,9 +361,9 @@ label:after {
 }
 
 .hide-text {
+    overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 dl dd dl {

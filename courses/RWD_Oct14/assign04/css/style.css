@@ -368,3 +368,46 @@ dt:after {
 .nohtml5 {
     display: none;
 }
+
+table#pricesTable{
+}
+table#pricesTable > thead{
+    font-size: 0;
+}
+table#pricesTable > tbody th{
+    font-size: 130%;
+    text-decoration: underline;
+}
+table#pricesTable > tbody tr{
+    display: block;
+}
+table#pricesTable > tbody td{
+    display: block;
+    margin-left: 0.1%;
+}
+table th[data-title]:before, table td[data-title]:before {
+    content: attr(data-title) ": ";
+    font-weight: bold;
+}
+@media all and (min-width: 50em) {
+    table#pricesTable{
+    }
+    table#pricesTable > thead{
+        font-size: inherit;
+    }
+    table#pricesTable > tbody th{
+        font-size: 100%;
+        text-decoration: none;
+    }
+    table#pricesTable > tbody tr{
+        display: table-row;
+    }
+    table#pricesTable > tbody td{
+        display: table-cell;
+        margin-left: inherit;
+    }
+    table th[data-title]:before, table td[data-title]:before {
+        content: "";
+        font-weight: inherit;
+    }
+}

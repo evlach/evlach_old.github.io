@@ -27,31 +27,33 @@
     <main id="content" role="main">
         <article>
             <h2>Our Prices</h2>
-            <table width="450" border="0">
-                <tr>
-                    <td></td>
-                    <td>Single</td>
-                    <td>Double</td>
-                    <td>Triple</td>
-                </tr>
-                <tr>
-                    <td style="font-weight:bold">Red Room</td>
-                    <td><img src="spacer.gif" height="5" width="5"/></td>
-                    <td>&#8364; 120</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="font-weight:bold">White Room</td>
-                    <td>&#8364; 90</td>
-                    <td><img src="spacer.gif" height="5" width="5"/></td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="font-weight:bold">Golden Room</td>
-                    <td>&nbsp;</td>
-                    <td>&#8364; 120</td>
-                    <td>&#8364; 150</td>
-                </tr>
+            <table id="pricesTable">
+                <thead>
+                    <th scope="col">Our Rooms</th>
+                    <th scope="col">Single</th>
+                    <th scope="col">Double</th>
+                    <th scope="col">Triple</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Red Room</th>
+                        <td data-title="Single">&#8364; 100</td>
+                        <td data-title="Double">&#8364; 120</td>
+                        <td data-title="Triple">&#8364; 180</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">White Room</td>
+                        <td data-title="Single">&#8364; 90</td>
+                        <td data-title="Double">&#8364; 80</td>
+                        <td data-title="Triple">&#8364; 70</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Golden Room</td>
+                        <td data-title="Single">&#8364; 110</td>
+                        <td data-title="Double">&#8364; 120</td>
+                        <td data-title="Triple">&#8364; 150</td>
+                    </tr>
+                </tbody>
             </table>
         </article>
     </main>

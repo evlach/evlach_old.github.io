@@ -375,7 +375,7 @@ table#pricesTable > thead{
     font-size: 0;
 }
 table#pricesTable > tbody th{
-    font-size: 130%;
+    font-size: 110%;
     text-decoration: underline;
 }
 table#pricesTable > tbody tr{
@@ -391,6 +391,7 @@ table th[data-title]:before, table td[data-title]:before {
 }
 @media all and (min-width: 50em) {
     table#pricesTable{
+        border: medium solid #000000;
     }
     table#pricesTable > thead{
         font-size: inherit;
@@ -409,5 +410,15 @@ table th[data-title]:before, table td[data-title]:before {
     table th[data-title]:before, table td[data-title]:before {
         content: "";
         font-weight: inherit;
+    }
+}
+
+input, select, textarea, select {
+    box-sizing: border-box;
+    display: block;
+}
+@media all and (min-width: 37em) {
+    input, select, textarea, select {
+        display: inline;
     }
 }

@@ -184,7 +184,7 @@ nav {
 }
 
 nav:hover, nav:focus, nav:active {
-    height: 8.5em;
+    height: 13em;
     transition: height 3s;
     -moz-transition: height 3s;
     -ms-transition: height 3s;
@@ -314,13 +314,14 @@ blockquote:before {
     -webkit-border-radius: 0.6em;
 }
 
-a[href^="http://"]:not([href*="evlach.github.io"]):before {
+nav a[href^="http://"]:not([href*="evlach.github.io"]):before {
     background: no-repeat url('../img/external-link-icon.png');
     content: "";
     height: 1em;
     padding-right: 0.1%;
     width: 100%;
 }
+
 form {
     margin-top: 1em;
 }

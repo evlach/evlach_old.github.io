@@ -318,18 +318,25 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before {
     background: no-repeat url('../img/external-link-icon.png');
     content: "";
     height: 1em;
-    padding-right: 1em;
+    padding-right: 0.1%;
     width: 100%;
 }
 form {
     margin-top: 1em;
 }
-
+@media all and (min-width: 50em) {
+    form {
+        max-width: 25em;
+    }
+}
 label {
     font-weight: bold;
+    display: block;
 }
+
 form ul {
     list-style: none;
+    padding: 1%;
 }
 form ul li {
     list-style: none;
@@ -340,6 +347,9 @@ form fieldset {
     margin: 0;
     padding: 0;
     text-indent: 0;
+}
+input, select, textarea {
+    width: 90%;
 }
 legend {
     font-weight: bold;

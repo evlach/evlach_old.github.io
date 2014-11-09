@@ -90,25 +90,28 @@ li a:focus, li a:hover, li:active {
     }
 }
 
-main {
+article {
     background-color: #FFF;
     margin: 0;
     padding: 0;
 }
 
 @media all and (min-width: 37em) {
-    main {
+    article {
         float: left;
         width: 90%;
     }
 }
 
 @media all and (min-width: 50em) {
-    main {
+    article {
         width: 80%;
     }
 }
-
+article h2 {
+    color: #166BA1;
+    font-weight: bold;
+}
 aside {
     background-color: #999;
     clear: both;
@@ -295,11 +298,6 @@ blockquote:before {
     content: open-quote;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-}
-
-article h2 {
-    color: #166BA1;
-    font-weight: bold;
 }
 
 .floatRight {

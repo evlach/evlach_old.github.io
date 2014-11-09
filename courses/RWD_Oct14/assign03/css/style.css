@@ -12,6 +12,7 @@ body {
 
 @media all and (min-width: 37em) {
     body {
+        font-family: sans-serif;
         background-image: url(../img/background-min.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -20,6 +21,7 @@ body {
 }
 @media all and (min-width: 75em) {
     body {
+        font-family: "Comic Sans MS", serif;
         background-image: url(../img/background.jpg);
         background-color: #ffffff;
         text-align: center;
@@ -35,11 +37,15 @@ h1 {
 }
 header h1 {
         font-size:120%;
+        font-size: 5vw;
+        font-size: 3vh;
         color: white;
     }
 @media all and (min-width: 37em) {
     header h1 {
         font-size:150%;
+        font-size: 6vw;
+        font-size: 5vh;
     }
 }
 
@@ -373,6 +379,14 @@ legend:after {
 }
 label:after {
     content: ":";
+}
+figure {
+    margin:0;
+}
+@media all and (min-width: 37em) {
+    figure {
+        margin:1%;
+    }
 }
 dl dd dl {
     display: inline;

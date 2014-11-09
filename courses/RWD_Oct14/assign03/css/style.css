@@ -32,6 +32,15 @@ h1, h2 {
 h1 {
     margin-top: 0;
 }
+header h1 {
+        font-size:120%;
+        color: white;
+    }
+@media all and (min-width: 37em) {
+    header h1 {
+        font-size:150%;
+    }
+}
 
 h2 {
     color: #166BA1;
@@ -162,7 +171,7 @@ ul.menu li:hover, ul.menu li:focus, ul.menu li:active {
 a#hamlink {
     color: #ff6040;
     display: block;
-    font-size: 70%;
+    font-size: 50%;
     padding: 0 0 0 2%;
     padding-top: .3em;
     transition: color 5s, line-height 3s;

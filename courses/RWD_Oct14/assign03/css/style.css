@@ -310,12 +310,15 @@ blockquote:before {
     vertical-align: -0.4em;
 }
 
-.floatRight {
-    float: right;
+@media all and (min-width: 37em) {
+    .floatRight {
+        float: right;
+    }
 }
-
-.floatLeft {
-    float: left;
+@media all and (min-width: 37em) {
+    .floatLeft {
+        float: left;
+    }
 }
 
 .radius {

@@ -7,19 +7,20 @@ body {
     margin: 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;"nav-down" ;
     font-size: 110%;
-    background-image: url(../img/background-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #166BA1;
 }
 
 @media all and (min-width: 37em) {
     body {
-        background-image: url(../img/background.jpg);
+        background-image: url(../img/background-min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         font-size: 100%;
     }
 }
 @media all and (min-width: 75em) {
     body {
+        background-image: url(../img/background.jpg);
         background-color: #ffffff;
         text-align: center;
     }

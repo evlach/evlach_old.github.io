@@ -319,7 +319,7 @@ a[href^="http://"]:not([href*="evlach.github.io"]):before {
     content: "";
     height: 1em;
     padding-right: 1em;
-    width: 1em;
+    width: 100%;
 }
 form {
     margin-top: 1em;

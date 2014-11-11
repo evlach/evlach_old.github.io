@@ -5,21 +5,25 @@
 */
 body {
     margin: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;"nav-down" ;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 110%;
-    background-image: url(../img/background-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #166BA1;
 }
 
 @media all and (min-width: 37em) {
     body {
-        background-image: url(../img/background.jpg);
+        font-family: sans-serif;
+        background-image: url(../img/background-min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         font-size: 100%;
     }
 }
+
 @media all and (min-width: 75em) {
     body {
+        font-family: "Comic Sans MS", serif;
+        background-image: url(../img/background.jpg);
         background-color: #ffffff;
         text-align: center;
     }
@@ -31,6 +35,32 @@ h1, h2 {
 
 h1 {
     margin-top: 0;
+}
+
+header h1 {
+    font-size: 120%;
+    color: white;
+}
+
+@media all and (min-width: 37em) {
+    header h1 {
+        font-size: 150%;
+    }
+}
+
+header h1 {
+    font-size: 120%;
+    font-size: 5vw;
+    font-size: 3vh;
+    color: white;
+}
+
+@media all and (min-width: 37em) {
+    header h1 {
+        font-size: 150%;
+        font-size: 6vw;
+        font-size: 5vh;
+    }
 }
 
 h2 {
@@ -159,7 +189,7 @@ ul.menu li:hover, ul.menu li:focus, ul.menu li:active {
 a#hamlink {
     color: #ff6040;
     display: block;
-    font-size: 70%;
+    font-size: 50%;
     padding: 0 0 0 2%;
     padding-top: .3em;
     transition: color 5s, line-height 3s;
@@ -181,7 +211,7 @@ nav {
 }
 
 nav:hover, nav:focus, nav:active {
-    height: 8.5em;
+    height: 13em;
     transition: height 3s;
     -moz-transition: height 3s;
     -ms-transition: height 3s;
@@ -302,12 +332,16 @@ article h2 {
     font-weight: bold;
 }
 
-.floatRight {
-    float: right;
+@media all and (min-width: 37em) {
+    .floatRight {
+        float: right;
+    }
 }
 
-.floatLeft {
-    float: left;
+@media all and (min-width: 37em) {
+    .floatLeft {
+        float: left;
+    }
 }
 
 .radius {
@@ -316,13 +350,14 @@ article h2 {
     -webkit-border-radius: 0.6em;
 }
 
-a[href^="http://"]:not([href*="evlach.github.io"]):before {
+nav a[href^="http://"]:not([href*="evlach.github.io"]):before {
     background: no-repeat url('../img/external-link-icon.png');
     content: "";
     height: 1em;
-    padding-right: 1em;
-    width: 1em;
+    padding-right: 0.1%;
+    width: 100%;
 }
+
 form {
     margin-top: 1em;
 }
@@ -330,37 +365,73 @@ form {
 label {
     font-weight: bold;
 }
+
 form ul {
     list-style: none;
+    padding: 1%;
 }
+
 form ul li {
     list-style: none;
+    padding: 0;
+    text-indent: 0;
 }
+
 form fieldset {
     border: 0;
     display: inline;
     margin: 0;
     padding: 0;
     text-indent: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
+form li{
+    width: 100%;
+}
+@media all and (min-width: 37em) {
+    form > fieldset {
+        width: 80%;
+    }
+    form li{
+        width: 80%;
+    }
+}
+
 legend {
     font-weight: bold;
 }
+
 legend:after {
     content: ":";
 }
+
 label:after {
     content: ":";
 }
+
+figure {
+    margin: 0;
+}
+
+@media all and (min-width: 37em) {
+    figure {
+        margin: 1%;
+    }
+}
+
 dl dd dl {
     display: inline;
 }
+
 dt {
     display: inline;
 }
+
 dt:after {
     content: ":";
 }
+
 .html5only {
     display: block;
 }
@@ -369,54 +440,81 @@ dt:after {
     display: none;
 }
 
-table#pricesTable{
+table#pricesTable {
 }
-table#pricesTable > thead{
+
+table#pricesTable > thead {
     font-size: 0;
 }
-table#pricesTable > tbody th{
+
+table#pricesTable > tbody th {
     font-size: 110%;
     text-decoration: underline;
 }
-table#pricesTable > tbody tr{
+
+table#pricesTable > tbody tr {
     display: block;
 }
-table#pricesTable > tbody td{
+
+table#pricesTable > tbody td {
     display: block;
     margin-left: 0.1%;
 }
+
 table th[data-title]:before, table td[data-title]:before {
     content: attr(data-title) ": ";
     font-weight: bold;
 }
+
 @media all and (min-width: 50em) {
-    table#pricesTable{
+    table#pricesTable {
         border: medium solid #000000;
     }
-    table#pricesTable > thead{
+
+    table#pricesTable > thead {
         font-size: inherit;
     }
-    table#pricesTable > tbody th{
+
+    table#pricesTable > tbody th {
         font-size: 100%;
         text-decoration: none;
     }
-    table#pricesTable > tbody tr{
+
+    table#pricesTable > tbody tr {
         display: table-row;
     }
-    table#pricesTable > tbody td{
+
+    table#pricesTable > tbody td {
         display: table-cell;
         margin-left: inherit;
     }
+
     table th[data-title]:before, table td[data-title]:before {
         content: "";
         font-weight: inherit;
     }
 }
 
-input, select, textarea, select {
+input, select, textarea {
     box-sizing: border-box;
-    display: block;
+    border-radius: .3em;
+    width: 90%;
+    display: inline-block;
 }
+textarea {
+    height: 3em;
+    overflow: auto;
+}
+select {
+    height: 2em;
+}
+.buttons input{
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+    margin: .2%;
+}
+
 @media all and (min-width: 37em) {
     input, select, textarea, select {
         display: inline;

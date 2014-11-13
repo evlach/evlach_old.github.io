@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             },
             build: {
                 src: 'assign04/js/*.js',
-                dest: 'assign05/js/script.min.js'
+                dest: 'assign05/js/script.js'
             }
         },
         uncss: {
@@ -19,14 +19,14 @@ module.exports = function (grunt) {
                     ignore: []
                 },
                 files: {
-                    'assign05/tidy.css': ['assign04/*.html']
+                    'assign05/css/tidy.css': ['assign04/*.html']
                 }
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'assign05/output.css': ['assign05/css/style.min.css']
+                    'assign05/css/style.css': ['assign05/css/tidy.css']
                 }
             }
         },
@@ -57,16 +57,22 @@ module.exports = function (grunt) {
                     src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
                     dest: 'assign05/img/'                  // Destination path prefix
                 }]
-            }
+            },
+
         }
     });
-
+    grunt.loadNpmTasks('grunt-remove');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'htmlmin:dist','imagemin']);
+    grunt.task.registerTask('clean', 'cleaning.', function(arg1, arg2) {
+        grunt.file.delete('assign05/css/tidy.css');
+        grunt.log.writeln(this.name + " done");
+    });
+    grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'htmlmin:dist','clean', 'imagemin:dist']);
+
 
 };

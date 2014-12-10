@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    "use strict";
     var mozjpeg = require('imagemin-mozjpeg');
 
     // Project configuration.
@@ -47,7 +48,7 @@ module.exports = function (grunt) {
         imagemin: {                          // Task
             dist: {
                 options: {                       // Target options
-                    optimizationLevel: 3,
+                    optimizationLevel: 5,
                     svgoPlugins: [{ removeViewBox: false }],
                     use: [mozjpeg()]
                 },// Another target
@@ -73,6 +74,7 @@ module.exports = function (grunt) {
         grunt.log.writeln(this.name + " done");
     });
     grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'htmlmin:dist','clean', 'imagemin:dist']);
+    grunt.registerTask('images', ['']);
 
 
 };

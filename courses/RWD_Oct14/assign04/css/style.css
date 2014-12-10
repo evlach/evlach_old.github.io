@@ -89,7 +89,6 @@ li a:focus, li a:hover, li:active {
 #wrapper {
     margin: 0 auto auto 0.1%;
     padding: 0 0.1% 1em 0.1%;
-    width: 100%;
 }
 
 @media all and (min-width: 75em) {
@@ -105,7 +104,6 @@ li a:focus, li a:hover, li:active {
     font-size: 50%;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
 }
 
 @media all and (min-width: 37em) {
@@ -355,7 +353,6 @@ nav a[href^="http://"]:not([href*="evlach.github.io"]):before {
     content: "";
     height: 1em;
     padding-right: 0.1%;
-    width: 100%;
 }
 
 form {
@@ -384,11 +381,8 @@ form fieldset {
     padding: 0;
     text-indent: 0;
     box-sizing: border-box;
-    width: 100%;
 }
-form li{
-    width: 100%;
-}
+
 @media all and (min-width: 37em) {
     form > fieldset {
         width: 80%;
@@ -498,7 +492,6 @@ table th[data-title]:before, table td[data-title]:before {
 input, select, textarea {
     box-sizing: border-box;
     border-radius: .3em;
-    width: 90%;
     display: inline-block;
 }
 textarea {

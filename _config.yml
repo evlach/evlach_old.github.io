@@ -30,7 +30,7 @@ twitter_username: evlachog
 github_username:  evlach
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 

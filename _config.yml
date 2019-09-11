@@ -30,7 +30,7 @@ twitter_username: evlachog
 github_username:  evlach
 
 # Build settings
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-dinky
 plugins:
   - jekyll-feed
 
